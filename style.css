@@ -26,3 +26,45 @@ body {
 footer {
     background-color: #03a9f4;
 }
+
+.card:hover {
+    transform: translateY(-5px);
+    transition: 0.3s ease;
+}
+
+.card {
+    border-radius: 15px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+/* =========================
+   WhatsApp Floating Button
+========================= */
+.wa-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25D366;
+    color: #fff;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    font-size: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    z-index: 9999;
+    transition: 0.3s ease;
+}
+
+.wa-float:hover {
+    transform: scale(1.1);
+    background-color: #1ebe5d;
+}
+
