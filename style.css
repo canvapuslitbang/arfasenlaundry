@@ -1,0 +1,28 @@
+body {
+    padding-top: 70px;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.hero {
+    height: 100vh;
+    background: linear-gradient(135deg, #6ec6ff, #b3e5fc);
+    color: #03396c;
+}
+
+.btn-primary {
+    background-color: #03a9f4;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #0288d1;
+}
+
+.card {
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+footer {
+    background-color: #03a9f4;
+}
