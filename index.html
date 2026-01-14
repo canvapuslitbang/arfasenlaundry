@@ -7,6 +7,12 @@
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
@@ -18,6 +24,7 @@
         <a class="navbar-brand fw-bold text-primary" href="#">Arfasen Laundry</a>
         <ul class="navbar-nav ms-auto">
             <li class="nav-item"><a class="nav-link" href="#layanan">Layanan</a></li>
+            <li class="nav-item"><a class="nav-link" href="harga.html">Harga</a></li>
             <li class="nav-item"><a class="nav-link" href="#keunggulan">Keunggulan</a></li>
             <li class="nav-item"><a class="nav-link" href="#kontak">Kontak</a></li>
         </ul>
@@ -25,8 +32,8 @@
 </nav>
 
 <!-- HERO -->
-<section class="hero d-flex align-items-center">
-    <div class="container text-center">
+<section class="hero d-flex align-items-center text-center">
+    <div class="container">
         <h1 class="fw-bold">Laundry Bersih, Wangi & Cepat</h1>
         <p class="lead">Solusi laundry terpercaya untuk kebutuhan harian Anda</p>
         <a href="#kontak" class="btn btn-primary btn-lg">Hubungi Kami</a>
@@ -37,24 +44,31 @@
 <section id="layanan" class="container my-5">
     <h2 class="text-center mb-4">Layanan Kami</h2>
     <div class="row g-4">
-        <div class="col-md-4">
-            <div class="card text-center p-3">
-                <h5>Cuci Kering</h5>
-                <p>Laundry bersih dan rapi</p>
+
+        <div class="col-md-4" data-aos="fade-up">
+            <div class="card text-center p-4">
+                <i class="fa-solid fa-shirt fa-3x text-primary mb-3"></i>
+                <h4>Cuci Kering</h4>
+                <p>Bersih, wangi, dan rapi</p>
             </div>
         </div>
-        <div class="col-md-4">
-            <div class="card text-center p-3">
-                <h5>Cuci Setrika</h5>
+
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="150">
+            <div class="card text-center p-4">
+                <i class="fa-solid fa-soap fa-3x text-primary mb-3"></i>
+                <h4>Cuci Setrika</h4>
                 <p>Wangi dan siap pakai</p>
             </div>
         </div>
-        <div class="col-md-4">
-            <div class="card text-center p-3">
-                <h5>Express</h5>
+
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+            <div class="card text-center p-4">
+                <i class="fa-solid fa-bolt fa-3x text-primary mb-3"></i>
+                <h4>Express</h4>
                 <p>Selesai dalam 1 hari</p>
             </div>
         </div>
+
     </div>
 </section>
 
@@ -62,16 +76,34 @@
 <section id="keunggulan" class="bg-light py-5">
     <div class="container text-center">
         <h2 class="mb-4">Kenapa Memilih Kami?</h2>
-        <p>Pelayanan cepat, harga terjangkau, dan hasil maksimal.</p>
+        <div class="row g-4">
+
+            <div class="col-md-4" data-aos="zoom-in">
+                <i class="fa-solid fa-clock fa-2x text-primary mb-2"></i>
+                <p>Cepat & Tepat Waktu</p>
+            </div>
+
+            <div class="col-md-4" data-aos="zoom-in" data-aos-delay="150">
+                <i class="fa-solid fa-star fa-2x text-primary mb-2"></i>
+                <p>Kualitas Terbaik</p>
+            </div>
+
+            <div class="col-md-4" data-aos="zoom-in" data-aos-delay="300">
+                <i class="fa-solid fa-wallet fa-2x text-primary mb-2"></i>
+                <p>Harga Terjangkau</p>
+            </div>
+
+        </div>
     </div>
 </section>
 
 <!-- KONTAK -->
 <section id="kontak" class="container my-5 text-center">
     <h2>Hubungi Kami</h2>
-    <p>📍 Arfasen Laundry<br>
-       📞 0823-1142-2096<br>
-       📧 arfasenlaundry@email.com
+    <p class="mt-3">
+        📍 Arfasen Laundry<br>
+        📞 0823-1142-2096<br>
+        📧 arfasenlaundry@email.com
     </p>
 </section>
 
@@ -79,6 +111,23 @@
 <footer class="bg-primary text-white text-center p-3">
     © 2026 Arfasen Laundry
 </footer>
+
+<!-- AOS SCRIPT -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1000,
+    once: true
+  });
+</script>
+
+<!-- WHATSAPP FLOATING BUTTON -->
+<a href="https://wa.me/6282311422096?text=Halo%20Arfasen%20Laundry,%20saya%20ingin%20laundry"
+   class="wa-float"
+   target="_blank"
+   aria-label="Chat WhatsApp">
+   <i class="fab fa-whatsapp"></i>
+</a>
 
 </body>
 </html>
